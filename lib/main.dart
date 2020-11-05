@@ -55,36 +55,42 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(children: [
           Container(
+              color: Colors.brown,
               child: Row(
-            children: [
-              FloatingActionButton(
-                onPressed: _incrementar,
-                child: Icon(
-                  Icons.add,
-                  size: 35,
-                  color: Colors.black,
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 15, right: 15),
-                child: Text(
-                  "$_counter",
-                  style: TextStyle(
-                    fontSize: 40,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  FloatingActionButton(
+                    onPressed: _incrementar,
+                    backgroundColor: Colors.amberAccent,
+                    child: Icon(
+                      Icons.add,
+                      size: 35,
+                      color: Colors.black,
+                    ),
                   ),
-                ),
-              ),
-              FloatingActionButton(
-                onPressed: _reducir,
-                child: Icon(
-                  Icons.remove,
-                  size: 35,
-                  color: Colors.black,
-                ),
-              ),
-            ],
-          )),
+                  Padding(
+                    padding: EdgeInsets.only(
+                        left: 25, right: 25, top: 25, bottom: 25),
+                    child: Text(
+                      "$_counter",
+                      style: TextStyle(
+                        fontSize: 40,
+                      ),
+                    ),
+                  ),
+                  FloatingActionButton(
+                    onPressed: _reducir,
+                    backgroundColor: Colors.amberAccent,
+                    child: Icon(
+                      Icons.remove,
+                      size: 35,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              )),
           Container(
+            color: Colors.blueGrey,
             height: 400,
             child: GridView.count(
               padding: EdgeInsets.all(20),
