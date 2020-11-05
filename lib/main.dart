@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
               )),
           Container(
             color: Colors.blueGrey,
-            height: 400,
+            height: 500,
             child: GridView.count(
               padding: EdgeInsets.all(20),
               crossAxisSpacing: 10,
